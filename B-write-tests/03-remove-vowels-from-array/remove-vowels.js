@@ -1,6 +1,6 @@
 function removeVowels(word)
 {
-  let characters = word.toLowerCase().split(""); // This is more adaptable
+  let characters = word.split("");
 
   let result = [];
 
