@@ -22,7 +22,12 @@ function add(numbers)
 
         for (let i = 0; i < numArray.length; i++)
         {
-            if(parseInt(numArray[i]) <= 1000)
+            if(parseInt(numArray[i]) < 0)
+            {
+                throw new Error("negatives not allowed: ");
+            }
+
+            else if(parseInt(numArray[i]) <= 1000)
             {
                 total += parseInt(numArray[i]);
             }
@@ -32,4 +37,4 @@ function add(numbers)
     }
 }
 
-console.log(add("1,9,6,7"));
+module.exports = add;
