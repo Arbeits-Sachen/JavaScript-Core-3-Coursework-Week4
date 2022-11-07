@@ -18,7 +18,7 @@ test("returns largest number in array", function ()
 // expected: 88;
 
 
-test("original array is the same", function ()
+test("original array wasnt changed", function ()
 {
   expect(input).toEqual([3, 21, 88, 4, 36]);
 });
