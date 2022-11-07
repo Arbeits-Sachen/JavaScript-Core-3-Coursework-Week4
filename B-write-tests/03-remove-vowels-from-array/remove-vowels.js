@@ -1,5 +1,6 @@
-function removeVowels(word) {
-  let characters = word.split("");
+function removeVowels(word)
+{
+  let characters = word.toLowerCase().split(""); // This is more adaptable
 
   let result = [];
 
@@ -26,4 +27,5 @@ module.exports = removeVowels;
   let result = removeVowels('samuel');
 
   what is the value of result?
+  sml
 */
